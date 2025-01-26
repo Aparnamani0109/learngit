@@ -1,0 +1,14 @@
+name: Subscription deployment 
+on: 
+  push:
+    branches:
+      - dev
+
+jobs:
+
+  deploy_zip:
+    name: Subscription deployment 
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout source code
+        uses: actions/checkout@v3
